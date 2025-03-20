@@ -62,6 +62,13 @@ console.log(boundary(400));
 */
 
 function epify(frase) {
+  // const containEpicode = str.toUpperCase().startsWith("EPICODE")
+  // if (containEpicode) {
+  //return str;
+  // } else {
+  //   return "Epicode " + str
+  //}
+
   let list = frase.split(" ");
   for (let i = 0; i < list.length; i++) {
     if (list[i] === "Epicode") {
