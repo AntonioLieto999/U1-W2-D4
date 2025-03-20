@@ -22,13 +22,23 @@ function crazySum(x, y) {
     return par1 + par2;
   }
 }
-console.log(crazySum(4, 3));
+console.log(crazySum(3, 3));
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
+function crazyDiff(x) {
+  let par1 = x;
+  let par2 = 19;
+  if (par1 <= par2) {
+    return par2 - par1;
+  } else {
+    return (par1 - par2) * 3;
+  }
+}
+console.log(crazyDiff(27));
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
@@ -41,10 +51,7 @@ function boundary(n) {
     return false;
   }
 }
-console.log(boundary(100));
-console.log(boundar(34));
-console.log(boundar(102));
-console.log(boundar(400));
+console.log(boundary(400));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -52,20 +59,39 @@ console.log(boundar(400));
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function epify(frase) {
+  let list = frase.split(" ");
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] === "Epicode") {
+      return frase;
+    }
+    return "Epicode " + frase;
+  }
+}
 
+console.log(epify("ciao bro"));
+console.log(epify("Epicode bro"));
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function check3and7(num) {
+  if (num >= 0) {
+    if (num % 3 === 0 || num % 7 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return "numero negativo";
+  }
+}
+console.log(check3and7(21));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
