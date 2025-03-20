@@ -86,6 +86,7 @@ console.log(epify("Epicode bro"));
 */
 
 function check3and7(num) {
+  //return n % 3 === 0 || n % 7 === 0
   if (num >= 0) {
     if (num % 3 === 0 || num % 7 === 0) {
       return true;
@@ -115,21 +116,21 @@ console.log(reverseString("hello"));
 */
 console.log("-------------------");
 
-function upperFirst(frase) {
-  const parole = frase.split(" ");
-  console.log(parole);
-  for (let i = 0; i < parole.length; i++) {
-    const lettere = parole[i];
-    console.log(lettere);
-    for (let y = 0; y < lettere.length; y++) {
-      if (lettere.length === 0) {
-        const lettMaiusc = y.toUpperCase();
-        console.log(lettMaiusc);
-      }
-    }
+function upperFirst(str) {
+  const word = str.split(" ");
+ const arrrowOffNewWords[]
+
+  for (let i = 0; i < Words.length; i++) {
+    const word = words[i];
+    const firstChar = word.charAt(0);
+    const firstCharUpper = firstChar.toUpperCase;
+    const remainLetters = word.slice(1);
+    const wordCapitalized = firstCharUpper + remainLetters;
+    arrrowOffNewWords.push(wordCapitalized);
   }
+  return arrrowOffNewWords.join(" ");
 }
-console.log(upperFirst("ciao bro"));
+console.log(upperFirst("ciao bro oggi è una bellissima giornata"));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
