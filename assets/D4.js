@@ -45,12 +45,14 @@ console.log(crazyDiff(27));
 */
 
 function boundary(n) {
+  // return (n >= 20 && n <= 100) || n === 400
   if ((n >= 20 && n <= 100) || n === 400) {
     return true;
   } else {
     return false;
   }
 }
+
 console.log(boundary(400));
 
 /* ESERCIZIO 5
@@ -133,4 +135,8 @@ console.log(upperFirst("ciao bro"));
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(max) {
+  const randomNum = Math.floor(Math.random() * max);
+  return randomNum;
+}
+console.log(giveMeRandom(20));
